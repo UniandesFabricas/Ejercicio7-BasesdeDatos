@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
-	<feature name="Base de datos"/>
-	<feature name="Base"/>
+	<feature automatic="selected" name="Base de datos"/>
+	<feature automatic="selected" name="modelos"/>
+	<feature automatic="selected" name="primario"/>
+	<feature automatic="selected" name="relacional"/>
+	<feature automatic="selected" name="secundario"/>
+	<feature manual="selected" name="Document Store"/>
+	<feature manual="selected" name="Key-value Store"/>
+	<feature name="Graph DBMS"/>
+	<feature name="RDF store"/>
+	<feature automatic="selected" name="instalacion"/>
+	<feature name="on-premise"/>
+	<feature automatic="selected" name="nube"/>
+	<feature automatic="unselected" name="Google Cloud SQL"/>
+	<feature manual="selected" name="Oracle Cloud"/>
+	<feature automatic="selected" name="SO"/>
+	<feature automatic="unselected" name="FreeBSD"/>
+	<feature automatic="unselected" name="Linux"/>
+	<feature automatic="unselected" name="OSX"/>
+	<feature automatic="unselected" name="Solaris"/>
+	<feature manual="selected" name="Windows"/>
+	<feature automatic="unselected" name="AIX"/>
+	<feature automatic="unselected" name="HP-UC"/>
+	<feature automatic="unselected" name="z/OS"/>
+	<feature automatic="selected" name="APIs"/>
+	<feature manual="selected" name="ADO.NET"/>
+	<feature automatic="unselected" name="JDBC"/>
+	<feature automatic="unselected" name="ODBC"/>
+	<feature automatic="unselected" name="OCI"/>
 </configuration>

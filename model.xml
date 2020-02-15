@@ -11,7 +11,40 @@
 	</properties>
 	<struct>
 		<and abstract="true" mandatory="true" name="Base de datos">
-			<feature name="Base"/>
+			<and mandatory="true" name="modelos">
+				<and mandatory="true" name="primario">
+					<feature mandatory="true" name="relacional"/>
+				</and>
+				<or name="secundario">
+					<feature name="Document Store"/>
+					<feature name="Key-value Store"/>
+					<feature name="Graph DBMS"/>
+					<feature name="RDF store"/>
+				</or>
+			</and>
+			<or mandatory="true" name="instalacion">
+				<feature name="on-premise"/>
+				<alt name="nube">
+					<feature name="Google Cloud SQL"/>
+					<feature name="Oracle Cloud"/>
+				</alt>
+			</or>
+			<alt mandatory="true" name="SO">
+				<feature name="FreeBSD"/>
+				<feature name="Linux"/>
+				<feature name="OSX"/>
+				<feature name="Solaris"/>
+				<feature name="Windows"/>
+				<feature name="AIX"/>
+				<feature name="HP-UC"/>
+				<feature name="z/OS"/>
+			</alt>
+			<alt mandatory="true" name="APIs">
+				<feature name="ADO.NET"/>
+				<feature name="JDBC"/>
+				<feature name="ODBC"/>
+				<feature name="OCI"/>
+			</alt>
 		</and>
 	</struct>
 </featureModel>
